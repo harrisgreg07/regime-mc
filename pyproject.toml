@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regime-mc"
+version = "0.1.0"
+description = "Markov regime-switching Monte Carlo for correlated multi-asset returns."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Greg Harris" }]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.20"]
+keywords = ["monte-carlo", "regime-switching", "markov", "quant", "risk", "cvar"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/gregharris73/regime-mc"
+
+[tool.setuptools]
+packages = ["regime_mc"]
