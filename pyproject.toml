@@ -21,3 +21,7 @@ Homepage = "https://github.com/gregharris73/regime-mc"
 
 [tool.setuptools]
 packages = ["regime_mc"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
