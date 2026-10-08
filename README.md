@@ -43,14 +43,14 @@ higher cross-correlation, make it sticky, and the simulated tails get fatter and
 more clustered — much closer to how markets actually behave. See
 [`examples/calm_vs_crisis.py`](examples/calm_vs_crisis.py).
 
-Pairs naturally with [kelly-sizing](https://github.com/gregharris73/kelly-sizing):
+Pairs naturally with [kelly-sizing](https://github.com/harrisgreg07/kelly-sizing):
 `regime-mc` generates a return sample, `kelly-sizing.growth_optimal_fraction`
 sizes it from the full (fat-tailed) distribution.
 
 ## Install & test
 
 ```bash
-pip install git+https://github.com/gregharris73/regime-mc.git
+pip install git+https://github.com/harrisgreg07/regime-mc.git
 # dev:
 pip install -e ".[test]" && pytest
 python examples/calm_vs_crisis.py
